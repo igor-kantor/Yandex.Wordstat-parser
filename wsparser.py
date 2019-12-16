@@ -62,18 +62,17 @@ class WordstatParser:
         response = json.loads(request.read().decode('utf8'))
         return response
 
-    def saveReportToTxt (self, report, leftCol, rightCol):
-        if leftCol == True:
-            phrases = open('phrases_left.txt', 'w')
-            shows = open('shows_left.txt', 'w')
-            for i in range(len(report['data'])):
-                for j in report['data'][i]['SearchedWith']:
-                    phraseToReport = str(j['Phrase'])
-                    phrases.write(phraseToReport+'\n')
-                    showsToReport = str(j['Shows'])
-                    shows.write(showsToReport+'\n')
-            phrases.close()
-            shows.close()
+    def saveReportToTxt (self, report, rightCol):
+        phrases = open('phrases_left.txt', 'w')
+        shows = open('shows_left.txt', 'w')
+        for i in range(len(report['data'])):
+            for j in report['data'][i]['SearchedWith']:
+                phraseToReport = str(j['Phrase'])
+                phrases.write(phraseToReport+'\n')
+                showsToReport = str(j['Shows'])
+                shows.write(showsToReport+'\n')
+        phrases.close()
+        shows.close()
         if rightCol == True:
             phrases = open('phrases_right.txt', 'w')
             shows = open('shows_right.txt', 'w')
