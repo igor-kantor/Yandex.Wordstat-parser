@@ -1,2 +1,2 @@
 # Yandex.Wordstat-parser
-Simple class for parsing left and right column for Yandex Wordstat via Direct API
+Simple small class for parsing data from WordStat via yandex direct api
