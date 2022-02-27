@@ -1,9 +1,0 @@
-LICENSE
-pyproject.toml
-setup.cfg
-src/YandexWordStatAPI/WordStatAPI.py
-src/YandexWordStatAPI/__init__.py
-src/YandexWordStatAPI.egg-info/PKG-INFO
-src/YandexWordStatAPI.egg-info/SOURCES.txt
-src/YandexWordStatAPI.egg-info/dependency_links.txt
-src/YandexWordStatAPI.egg-info/top_level.txt
