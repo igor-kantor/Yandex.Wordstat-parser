@@ -4,7 +4,7 @@ import json
 import warnings
 
 
-class WordstatParser:
+class WordstatAPI:
     def __init__(self, url, token, username=None):
         self.url = url
         self.token = token
