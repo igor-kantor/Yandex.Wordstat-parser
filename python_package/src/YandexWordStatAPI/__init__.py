@@ -1,1 +1,1 @@
-from .WordStatAPI import WordstatAPI
+from . import WordStatAPI
