@@ -3,7 +3,7 @@ import json
 import warnings
 
 
-class WordStatAPI:
+class WordstatAPI:
     def __init__(self, url, token, username=None):
         self.url = url
         self.token = token
